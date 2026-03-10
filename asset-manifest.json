@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/weddingInvitation/static/css/main.9f8d9ffc.css",
+    "main.css": "/weddingInvitation/static/css/main.34b66011.css",
     "main.js": "/weddingInvitation/static/js/main.7bcb031a.js",
     "static/js/453.8c3ba8d7.chunk.js": "/weddingInvitation/static/js/453.8c3ba8d7.chunk.js",
     "static/media/music_1.mp3": "/weddingInvitation/static/media/music_1.6a0be9300d4622f4f7d0.mp3",
@@ -10,12 +10,12 @@
     "static/media/Cairo-Regular.ttf": "/weddingInvitation/static/media/Cairo-Regular.b239f7e9583f66e51c92.ttf",
     "static/media/wedding_rings.png": "/weddingInvitation/static/media/wedding_rings.22d1e563d3629028e7c9.png",
     "index.html": "/weddingInvitation/index.html",
-    "main.9f8d9ffc.css.map": "/weddingInvitation/static/css/main.9f8d9ffc.css.map",
+    "main.34b66011.css.map": "/weddingInvitation/static/css/main.34b66011.css.map",
     "main.7bcb031a.js.map": "/weddingInvitation/static/js/main.7bcb031a.js.map",
     "453.8c3ba8d7.chunk.js.map": "/weddingInvitation/static/js/453.8c3ba8d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f8d9ffc.css",
+    "static/css/main.34b66011.css",
     "static/js/main.7bcb031a.js"
   ]
 }
