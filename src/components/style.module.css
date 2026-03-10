@@ -1,0 +1,377 @@
+/* Bg Music */
+.musicBtn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    z-index: 9999;
+    background-color: #ffffffe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.musicBtn svg {
+    stroke: #835d2f;
+}
+
+/* IntroSlide */
+.startBtn {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    border: none;
+    background-image: url(./../assets/media/textured_bg.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    -webkit-transition: opacity 4s ease-out; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.startBtn > p {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: .1em;
+    font-family: LuxuriousScript-Regular;
+    color: #835d2f;
+    padding: 0 3rem;
+}
+
+.tapContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    animation: fade 2.5s ease-in-out infinite;
+    margin-bottom: 5rem;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .1;
+    }
+}
+
+.tapIcon {
+    padding: 1rem;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #835d2f;
+    opacity: .8;
+}
+
+.tapIcon svg path {
+    stroke: #835d2f;
+}
+
+.tapContainer p {
+    color: #835d2f;
+}
+
+.hideStartBtn {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.introContainer {
+    background-image: url(./../assets/media/bg_intro.jpg);
+    background-color: #0000004d;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.overlay {
+    background-color: #ffffff99;
+    position: absolute;
+    top: 35%;
+    bottom: 25%;
+    left: 30%;
+    right: 0%;
+    filter: blur(80px);
+    border-radius: 50%;
+}
+
+.title {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-family: Cairo-Regular, serif;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.names {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 3.75rem;
+    font-family: LuxuriousScript-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.divider span:nth-child(1), .divider span:nth-child(3) {
+    background-color: #fff;
+    width: 4rem;
+    height: 1px;
+}
+
+.divider span:nth-child(2) {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.date {
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: Cairo-Regular, serif;
+    margin-bottom: 0;
+}
+
+.time {
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: Cairo-Regular, serif;
+    margin-top: 0;
+}
+
+.details {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Cairo-Regular,serif;
+}
+
+.scrollArrow {
+    text-align: center;
+    animation: jump 1s ease-in-out infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Countdown */
+.countdownContainer {
+    background-image: url(./../assets/media/textured_bg.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100vw;
+    padding: 4rem 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainTitle {
+    color: #835d2f;
+    font-family: LuxuriousScript-Regular;
+    font-size: 45px;
+    margin: 0;
+}
+
+.subTitle {
+    color: #835d2f99;
+    font-family: Cairo-Regular,serif;
+    font-size: 15px;
+    margin-top: -6px;
+    margin-bottom: 25px;
+    letter-spacing: .3em;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+
+.countdown div {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.countdown div:first-child {
+    border-left: none;
+}
+
+.countdown div p.no {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #835d2f;
+    font-family: LuxuriousScript-Regular;
+    font-size: 40px;
+}
+
+.countdown div p.name {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #835d2f99;
+    font-family: Cairo-Regular,serif;
+    font-size: 12px;
+    text-transform:uppercase;
+}
+
+.countdownDivider {
+    height: 50px;
+    width: 1px;
+    margin: auto;
+    background-color: #d9d0bf;
+}
+
+/* Location */
+.locationContainer {
+    background-color: #f9f6f1;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.locationTitle {
+    color: #835d2f;
+    font-family: LuxuriousScript-Regular;
+    font-size: 45px;
+    margin: 0;
+}
+
+.locationPara {
+    color: #835d2fe6;
+    font-size: 16px;
+    font-family: Cairo-Regular, serif;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.address {
+    color: #835d2fe6;
+    font-family: Cairo-Regular, serif;
+    text-align: center;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.mapBtn {
+    color: #835d2fb3;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: Cairo-Regular, serif;
+    font-size: 14px;
+    border: 1px solid #835d2fb3;
+    padding: 4px 20px;
+    border-radius: 50px;
+    letter-spacing: .2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 200px
+}
+
+.mapBtn div:first-child {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+}
+
+/* Last Slide */
+.lastSlideContainer {
+    background-image: url(./../assets/media/textured_bg.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100vw;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    color: #835d2f;
+}
+
+.lastSlideContainer > .names {
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.lastSlideContainer > .date {
+    font-size: .9rem;
+    line-height: 1rem;
+    font-style: italic;
+}
+
+.lastSlideContainer > .date:first-child {
+    margin-top: 0;
+}
+
+.ringsImg {
+    width: 15vw;
+    margin-top: 6vh;
+}

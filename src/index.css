@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Luxurious Script */
+@font-face {
+  font-family: "LuxuriousScript-Regular";
+  src: local("LuxuriousScript-Regular"),
+    url("./assets/fonts/LuxuriousScript-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+/* Cairo */
+@font-face {
+  font-family: "Cairo-Regular";
+  src: local("Cairo-Regular"),
+    url("./assets/fonts/Cairo-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
