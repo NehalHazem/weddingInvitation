@@ -27,3 +27,27 @@ code {
     url("./assets/fonts/Cairo-Regular.ttf") format("opentype");
   font-weight: normal;
 }
+
+/* AmiriQuran */
+@font-face {
+  font-family: "AmiriQuran-Regular";
+  src: local("AmiriQuran-Regular"),
+    url("./assets/fonts/AmiriQuran-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+/* NotoNastaliqUrdu */
+@font-face {
+  font-family: "NotoNastaliqUrdu-Regular";
+  src: local("NotoNastaliqUrdu-Regular"),
+    url("./assets/fonts/NotoNastaliqUrdu-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+/* ArefRuqaa */
+@font-face {
+  font-family: "ArefRuqaa-Regular";
+  src: local("ArefRuqaa-Regular"),
+    url("./assets/fonts/ArefRuqaa-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
